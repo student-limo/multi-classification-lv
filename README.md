@@ -36,3 +36,7 @@
 * `train_path`中填入训练集路径
 * `test_path`填入测试集路径
 将输出混淆矩阵及其示意图以及各个训练指标值
+结果示意图如下图所示
+
+![cc](https://github.com/student-limo/multi-classification-lv/blob/master/e1ccc72f86e4fc200fda2cd4fab1cd1.png)
+
