@@ -4,16 +4,20 @@
 ## 流量五元组划分
 ### sortByTime.py
 用于将pcap文件中的数据包按照时间顺序重新排序
-于代码中的 ```sorted_pcap_by_feature()``` 方法中填入待处理的文件夹地址后运行代码即可
+于代码中的 ```sorted_pcap_by_feature()``` 方法中填入待处理的文件夹路径后运行代码即可
 
 ### flow_cut.py
 用于将pcap文件中的数据包按照五元组分流，生成一批只包含一个五元组的pcap文件
-其中请于```pcapngs_dir```中输入待处理的文件夹地址，于```pcaps_dir```输入输出结果的地址
+其中请于```pcapngs_dir```中输入待处理的文件夹路径，于```pcaps_dir```输入输出结果的路径
 方法```flow_cut()```和```pcap_ana_new()```均可完成分流，后者能够将五元组按照ip序号和时间戳间隔进行更细致的划分
 
 ### flow_del.py
 用于将pcap文件中的异常包删除
 请于```data_path```和```file```中填入待处理的数据文件夹路径
+
+### nameChange.py
+用于将待提取特征的pcap文件的文件名加一个标签后缀
+请于`f_path`中填入待处理pcap文件文件夹路径，并于`filename.replace(".pcap", "#(标签名).pcap")`方法中第二个参数中填入预计标记的标签名即可
 
 ## 流量特征提取
 ### f_e.py
